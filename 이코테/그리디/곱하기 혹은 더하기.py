@@ -30,7 +30,6 @@ for i in range(1, len(data)):
 print(result)
 
 # 3. 얻어갈 점
-
 '''
 result = 1 일 경우에도 곱하기보다 더하기를 선택해야하는 부분 간과했음.
 result를 스트링의 맨 앞자로 초기화하는 방법도 있음.
