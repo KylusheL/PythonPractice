@@ -52,7 +52,7 @@ def solution(food_times, k):
 
 # 3. 얻어갈 점
 '''
-heapq 라이브러리
+heapq 모듈
 sum 함수
 sorted 함수 with lambda
 '''
