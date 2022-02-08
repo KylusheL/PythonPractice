@@ -56,6 +56,13 @@ cnt = a.count(1)
 a.remove(1)
 ```
 
+### 5. for문에서 index 점프
+```python
+# start <= i < end 범위에서 jump만큼 인덱스를 이동하고 싶을 때
+for i in range(start, end, jump):
+    # do something
+```
+
 <hr>
 
 ## 헷갈릴 수 있는 개념 바로잡기
