@@ -1,4 +1,4 @@
-# 1. 나의 풀이
+# 1. 나의 초견
 def rotate(arr, size): # 시계방향으로 90도 회전하는 함수
     return [(y, size - 1 - x) for (x, y) in arr]
 
