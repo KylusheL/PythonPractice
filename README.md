@@ -63,6 +63,11 @@ for i in range(start, end, jump):
     # do something
 ```
 
+### 6. 리스트 거꾸로 출력하기
+```python
+print(my_list[::-1])
+```
+
 <hr>
 
 ## 헷갈릴 수 있는 개념 바로잡기
