@@ -68,6 +68,15 @@ for i in range(start, end, jump):
 print(my_list[::-1])
 ```
 
+### 7. 2차원 리스트 복사하기
+deepcopy를 사용하지 않으면 b를 수정할 때 a도 같이 수정된다.
+```python
+import copy
+a = [[1, 2, 3], [4, 5, 6]]
+b = copy.deepcopy(a)
+
+```
+
 <hr>
 
 ## 헷갈릴 수 있는 개념 바로잡기
