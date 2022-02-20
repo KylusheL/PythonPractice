@@ -74,7 +74,14 @@ deepcopy를 사용하지 않으면 b를 수정할 때 a도 같이 수정된다.
 import copy
 a = [[1, 2, 3], [4, 5, 6]]
 b = copy.deepcopy(a)
+```
 
+### 8. 빠르게 입력받기
+```python
+import sys
+input_data = sys.stdin.readline().rstrip()
+
+print(input_data)
 ```
 
 <hr>
