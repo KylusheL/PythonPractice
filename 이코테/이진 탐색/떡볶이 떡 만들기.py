@@ -2,16 +2,17 @@
 n, m = map(int, input().split())
 array = list(map(int, input().split()))
 array.sort(reverse = True)
+array.append(0)
 
 result = 0
-acc = 0
-for i in range(1, n):
+for i in range(1, n + 1):
     diff = array[i - 1] - array[i]
-    if acc + diff * i >= m:
-        result = array[i - 1] - int((m - acc) / i)
+    if diff * i >= m:
+        result = array[i] + int((diff * i - m) / i)
+        m = 0
         break
     else:
-        acc += diff * i
+        m -= diff * i
 
 print(result)
 
@@ -47,7 +48,7 @@ print(result)
 
 # 3. 얻어갈 점
 '''
-접근이 많이 어려웠고, 결국 이진 탐색이 아닌 다른 방법으로 풀었는데, 시간복잡도에 큰 차이는 없는 것 같다. (O(N log N))
-테스트케이스가 없어서 확인이 불가능한 점이 아쉽다.
 백준 2805번 문제와 동일한 문제라고 한다.
+도저히 이진탐색으로 접근할 방법이 떠오르지 않아 정렬 후 순회하며 타겟을 감소시키는 방법으로 풀었다.
+시간복잡도가 더 높지 않을까 걱정했는데 내 풀이법이 훨씬 빠르다.
 '''
