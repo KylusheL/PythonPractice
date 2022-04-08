@@ -84,6 +84,12 @@ input_data = sys.stdin.readline().rstrip()
 print(input_data)
 ```
 
+### 9. 사용자 정의 비교 함수를 통한 리스트 정렬
+```python
+from functools import cmp_to_key
+my_list = sorted(my_list, key=cmp_to_key(my_cmp))
+```
+
 <hr>
 
 ## 헷갈릴 수 있는 개념 바로잡기
