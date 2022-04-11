@@ -90,6 +90,11 @@ from functools import cmp_to_key
 my_list = sorted(my_list, key=cmp_to_key(my_cmp))
 ```
 
+### 10. 리스트를 문자열로 출력
+```python
+print(' '.join(str, my_list))
+```
+
 <hr>
 
 ## 헷갈릴 수 있는 개념 바로잡기
