@@ -95,6 +95,14 @@ my_list = sorted(my_list, key=cmp_to_key(my_cmp))
 print(' '.join(map(str, my_list)))
 ```
 
+### 11. 유클리드 호제법
+```python
+def gcd(a, b):
+    while b > 0:
+        a, b = b, a % b
+    return a
+```
+
 <hr>
 
 ## 헷갈릴 수 있는 개념 바로잡기
