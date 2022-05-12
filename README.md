@@ -103,6 +103,13 @@ def gcd(a, b):
     return a
 ```
 
+### 12. 2차원 리스트에서 최댓값, 최솟값 구하기
+```python
+# data = 2차원 배열
+max_val = max(map(max, data))
+min_val = min(map(min, data))
+```
+
 <hr>
 
 ## 헷갈릴 수 있는 개념 바로잡기
