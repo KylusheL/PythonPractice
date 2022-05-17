@@ -30,7 +30,6 @@ for edge in edges:
     cost, a, b = edge
     if find_parent(parent, a) != find_parent(parent, b):
         union_parent(parent, a, b)
-        print(edge)
         cnt += 1
         result -= cost
         if cnt == n - 1:
