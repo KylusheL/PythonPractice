@@ -92,7 +92,11 @@ my_list = sorted(my_list, key=cmp_to_key(my_cmp))
 
 ### 10. 리스트를 문자열로 출력
 ```python
+# 방법 1
 print(' '.join(map(str, my_list)))
+
+# 방법 2
+print(*my_list)
 ```
 
 ### 11. 유클리드 호제법
