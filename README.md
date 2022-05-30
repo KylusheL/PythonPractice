@@ -114,6 +114,12 @@ max_val = max(map(max, data))
 min_val = min(map(min, data))
 ```
 
+### 13. 재귀 한계 조정
+```python
+import sys
+sys.setrecursionlimit(10 ** 6)
+```
+
 <hr>
 
 ## 헷갈릴 수 있는 개념 바로잡기
