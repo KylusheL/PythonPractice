@@ -1,0 +1,27 @@
+import sys
+input = sys.stdin.readline
+sys.setrecursionlimit(10 ** 6)
+
+tree = []
+while True:
+    try:
+        n = int(input())
+        tree.append(n)
+    except:
+        break
+
+def print_post(tree):
+    root = tree[0]
+    right = len(tree)
+    if len(tree) > 1:
+        for i in range(1, len(tree)):
+            if tree[i] > root:
+                right = i
+                break
+    if right > 1:
+        print_post(tree[1:right])
+    if right < len(tree):
+        print_post(tree[right:])
+    print(root)
+
+print_post(tree)
